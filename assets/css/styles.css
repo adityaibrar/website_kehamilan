@@ -10,6 +10,9 @@
   --white: #ffffff;
   --max-width: 1200px;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
@@ -61,7 +64,7 @@ header {
       rgba(18, 172, 142, 0.9),
       rgba(18, 172, 142, 0.7)
     ),
-    url("assets/header.jpg");
+    url("../images/header.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
