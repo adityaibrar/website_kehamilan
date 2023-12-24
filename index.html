@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="assets/css/styles.css" />
   <title>HealthCare</title>
 </head>
@@ -13,14 +14,14 @@
 
 
   <!-- Header/Jamboard -->
-  <header>
+  <header id="header">
     <nav class="section__container nav__container">
       <div class="nav__logo">Health<span>Care</span></div>
       <ul class="nav__links">
         <li class="link"><a href="#">Beranda</a></li>
-        <li class="link" onclick="moveToAboutUs()"><a>Tentang Kami</a></li>
-        <li class="link"><a href="#">Layanan</a></li>
-        <li class="link" onclick="moveToTeam()"><a href="#">Team</a></li>
+        <li class="link"><a href="#" onclick="moveToAboutUs()">Tentang Kami</a></li>
+        <li class="link"><a href="#" onclick="moveToService()">Layanan</a></li>
+        <li class="link"><a href="#" onclick="moveToTeam()">Team</a></li>
       </ul>
     </nav>
     <div class="section__container header__container">
@@ -30,7 +31,7 @@
           Bersama kami, anda bisa melihat kebutuhan sang buah hati
           agar sehat dan nutrisi terjaga muai dari awal masa kehamilan sampai melahirkan
         </p>
-        <button class="btn" onclick="moveToService()">Lihat Layanan</button>
+        <button class="btn" onclick="moveToService()">Layanan Kami</button>
       </div>
       <!-- <div class="header__form">
           <form>
@@ -46,51 +47,11 @@
   </header>
   <!-- end of header/jamboard -->
 
-  <!-- service -->
-  <section id="service" class="section__container service__container">
-    <div class="service__header">
-      <div class="service__header__content">
-        <h2 class="section__header">Layanan Khusus kami</h2>
-        <p>
-          Lebih dari sekedar menyediakan perawatan medis, 
-          komitmen kami terletak pada memberikan layanan tak 
-          tertandingi yang disesuaikan dengan kebutuhan unik Anda.
-        </p>
-      </div>
-      <button class="service__btn">Tanyakan Layanan</button>
-    </div>
-    <div class="service__grid">
-      <div class="service__card">
-        <span><i class="ri-microscope-line"></i></span>
-        <h4>Usia Kehamilan</h4>
-        <p>
-          Accurate Diagnostics, Swift Results: Experience top-notch Laboratory
-          Testing at our facility.
-        </p>
-        <a href="#">Selengkapnya</a>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-mental-health-line"></i></span>
-        <h4>Kelola Nutrisi</h4>
-        <p>
-          Our thorough assessments and expert evaluations help you stay
-          proactive about your health.
-        </p>
-        <a href="#">Selengkapnya</a>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-hospital-line"></i></span>
-        <h4>Diagnosa Kehamilan</h4>
-        <p>
-          Experience comprehensive oral care with Dentistry. Trust us to keep
-          your smile healthy and bright.
-        </p>
-        <a href="#">Selengkapnya</a>
-      </div>
-    </div>
-  </section>
+  <!-- action button -->
+  <button class="material-icons floating_btn" onclick="moveToHome()">arrow_upward</button>
+  <!-- end of action button -->
 
-  <!-- end of service -->
+  
 
 
   <!-- about us -->
@@ -166,6 +127,52 @@
     </div>
   </section>
   <!-- end of choose us -->
+
+  <!-- service -->
+  <section id="service" class="section__container service__container">
+    <div class="service__header">
+      <div class="service__header__content">
+        <h2 class="section__header">Layanan Khusus kami</h2>
+        <p>
+          Lebih dari sekedar menyediakan perawatan medis, 
+          komitmen kami terletak pada memberikan layanan tak 
+          tertandingi yang disesuaikan dengan kebutuhan unik Anda.
+        </p>
+      </div>
+      <button class="service__btn">Tanyakan Layanan</button>
+    </div>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class="ri-microscope-line"></i></span>
+        <h4>Usia Kehamilan</h4>
+        <p>
+          Accurate Diagnostics, Swift Results: Experience top-notch Laboratory
+          Testing at our facility.
+        </p>
+        <a href="#">Selengkapnya</a>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-mental-health-line"></i></span>
+        <h4>Kelola Nutrisi</h4>
+        <p>
+          Our thorough assessments and expert evaluations help you stay
+          proactive about your health.
+        </p>
+        <a href="#">Selengkapnya</a>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-hospital-line"></i></span>
+        <h4>Diagnosa Kehamilan</h4>
+        <p>
+          Experience comprehensive oral care with Dentistry. Trust us to keep
+          your smile healthy and bright.
+        </p>
+        <a href="#">Selengkapnya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of service -->
 
   <!-- team -->
   <section id="team" class="section__container doctors__container">

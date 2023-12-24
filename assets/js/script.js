@@ -12,3 +12,8 @@ function moveToTeam() {
     var konten = document.getElementById('team');
     konten.scrollIntoView();
 }
+
+function moveToHome() {
+    var content = document.getElementById('header');
+    content.scrollIntoView();
+}
