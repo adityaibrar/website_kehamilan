@@ -5,10 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles_nutrisi.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Usia Kehamilan</title>
 </head>
 <body>
+    <header class="header">
+        <nav class="section_container nav_container">
+            <div class="nav__logo">Health<span>Care</span></div>
+            <ul class="nav__links">
+                <li class="link"><a href="UsiaKehamilan.html">Usia Kehamilan</a></li>
+                <li class="link"><a href="Nutrisi.html">Nutrisi Kehamilan</a></li>
+                <li class="link"><a href="DiagnosaKehamilan.html">Diagnosa Kehamilan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- service -->
+    <section id="service" class="section__container service__container">
+        <div class="service__header">
+            <div class="service__header__content animate__animated animate__backInRight">
+                <h2 class="section__header">Usia Kehamilan</h2>
+                <p>
+                    Didalam masa-masa kehamilan, usia untuk sang buah hati sangat perlu diperhatikan.
+                    Setiap Trimester dalam kehamilan memiliki nutrisi-nutrisi yang harus dipenuhi oleh ibu.
+                    Untuk Selengkapnya bisa memilih dari 3 trimester dibawah ini.
+                </p>
+            </div>
+        </div>
+        
+        <div class="service__grid">
+            <div class="service__card animate__animated animate__bounceIn">
+                <span><i class="ri-microscope-line"></i></span>
+                <h4>Trimester 1</h4>
+                <p>
+                    Dimulai Dari Bulan 1 Sampai <br>Bulan 3 Kehamilan
+                </p>
+                <a href="#" onclick="trimester1UsiaKehamilan()">Selengkapnya</a>
+            </div>
+            <div class="service__card animate__animated animate__bounceIn">
+                <span><i class="ri-mental-health-line"></i></span>
+                <h4>Trimester 2</h4>
+                <p>
+                    Dimulai Dari Bulan 4 Sampai <br>Bulan 6 Kehamilan
+                </p>
+                <a href="#">Selengkapnya</a>
+            </div>
+            <div class="service__card animate__animated animate__bounceIn">
+                <span><i class="ri-hospital-line"></i></span>
+                <h4>Trimester 3</h4>
+                <p>
+                    Dimulai Dari Bulan 7 Sampai <br>Bulan 9 Kehamilan
+                </p>
+                <a href="#">Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+    <!-- end of service -->
+    <div class="section__container doctors__nav" style="display: none;" onclick="backNavigator()">
+        <span><i class="ri-arrow-left-line"></i></span>
+    </div>
     
+    <!-- choose us -->
+    <section class="section__container why__container" style="display: none;">
+        <div class="why__image">
+            <img src="../assets/images/choose-us.jpg" alt="why choose us" />
+        </div>
+        <div class="why__content">
+            <h2 class="section__header">Why Choose Us</h2>
+            <p>
+                With a steadfast commitment to your well-being, our team of highly
+                trained healthcare professionals ensures that you receive nothing
+                short of exceptional patient experiences.
+            </p>
+            <div class="why__grid">
+                <span><i class="ri-hand-heart-line"></i></span>
+                <div>
+                    <h4>Intensive Care</h4>
+                    <p>
+                        Our Intensive Care Unit is equipped with advanced technology and
+                        staffed by team of professionals
+                    </p>
+                </div>
+                <span><i class="ri-truck-line"></i></span>
+                <div>
+                    <h4>Free Ambulance Car</h4>
+                    <p>
+                        A compassionate initiative to prioritize your health and
+                        well-being without any financial burden.
+                    </p>
+                </div>
+                <span><i class="ri-hospital-line"></i></span>
+                <div>
+                    <h4>Medical and Surgical</h4>
+                    <p>
+                        Our Medical and Surgical services offer advanced healthcare
+                        solutions to address medical needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of choose us -->
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
