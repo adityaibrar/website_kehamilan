@@ -1,13 +1,17 @@
 var title = document.querySelector('.service__container')
-var backNavigator = document.querySelector('.doctors__nav');
+var backNavigator = document.querySelector('.header');
 var trimester1 = document.getElementById('trimester1');
 var trimester2 = document.getElementById('trimester2');
 var trimester3 = document.getElementById('trimester3');
+var btnUp = document.getElementById('btn-up');
 var serviceGrid = document.querySelector('.service__grid');
 
 function moveToHome() {
-    backNavigator.style.display = 'block';
     backNavigator.scrollIntoView();
+}
+
+function explore(){
+    window.location.href = "../index.html";
 }
 
 function trimester1UsiaKehamilan() {
@@ -17,7 +21,6 @@ function trimester1UsiaKehamilan() {
         trimester3.style.display = 'none';
         serviceGrid.style.display = 'none';
         title.style.display = 'none';
-        trimester1.scrollIntoView();
     } else {
         trimester1.style.display = 'none';
         serviceGrid.style.display = 'block';
@@ -32,7 +35,7 @@ function trimester2UsiaKehamilan() {
         trimester1.style.display = 'none';
         serviceGrid.style.display = 'none';
         title.style.display = 'none';
-        trimester2.scrollIntoView();
+        btnUp.style.display = '';
     } else {
         trimester1.style.display = 'none';
         trimester2.style.display = 'none';
@@ -49,7 +52,7 @@ function trimester3UsiaKehamilan() {
         trimester1.style.display = 'none';
         serviceGrid.style.display = 'none';
         title.style.display = 'none';
-        trimester3.scrollIntoView();
+        btnUp.style.display = '';
     } else {
         trimester1.style.display = 'none';
         trimester2.style.display = 'none';
