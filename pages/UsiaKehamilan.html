@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../assets/css/styles_usia.css" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
-    <link rel="stylesheet" href="../assets/css/styles_nutrisi.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Usia Kehamilan</title>
 </head>
@@ -49,7 +49,7 @@
                 <p>
                     Dimulai Dari Bulan 4 Sampai <br>Bulan 6 Kehamilan
                 </p>
-                <a href="#">Selengkapnya</a>
+                <a href="#" onclick="trimester2UsiaKehamilan()">Selengkapnya</a>
             </div>
             <div class="service__card animate__animated animate__bounceIn">
                 <span><i class="ri-hospital-line"></i></span>
@@ -57,56 +57,208 @@
                 <p>
                     Dimulai Dari Bulan 7 Sampai <br>Bulan 9 Kehamilan
                 </p>
-                <a href="#">Selengkapnya</a>
+                <a href="#" onclick="trimester3UsiaKehamilan()">Selengkapnya</a>
             </div>
         </div>
     </section>
     <!-- end of service -->
-    <div class="section__container doctors__nav" style="display: none;" onclick="backNavigator()">
+    <div class="section__container doctors__nav" style="display: none;" onclick="backNav()">
         <span><i class="ri-arrow-left-line"></i></span>
     </div>
     
-    <!-- choose us -->
-    <section class="section__container why__container" style="display: none;">
-        <div class="why__image">
-            <img src="../assets/images/choose-us.jpg" alt="why choose us" />
+    <!-- Trimester 1 -->
+    <section id="trimester1" class="section__container animate__animated animate__fadeIn" style="display: none;" >
+        <h2 class="section_tm__header"> Trimester 1 (1-13 minggu)</h2>
+        <h1> </h1>
+        <div class="tm__image">
+            <img src="../assets/images/Morning Sickness.jpg" alt="Morning Sickness" />
         </div>
-        <div class="why__content">
-            <h2 class="section__header">Why Choose Us</h2>
-            <p>
-                With a steadfast commitment to your well-being, our team of highly
-                trained healthcare professionals ensures that you receive nothing
-                short of exceptional patient experiences.
-            </p>
-            <div class="why__grid">
-                <span><i class="ri-hand-heart-line"></i></span>
-                <div>
-                    <h4>Intensive Care</h4>
-                    <p>
-                        Our Intensive Care Unit is equipped with advanced technology and
-                        staffed by team of professionals
-                    </p>
-                </div>
-                <span><i class="ri-truck-line"></i></span>
-                <div>
-                    <h4>Free Ambulance Car</h4>
-                    <p>
-                        A compassionate initiative to prioritize your health and
-                        well-being without any financial burden.
-                    </p>
-                </div>
-                <span><i class="ri-hospital-line"></i></span>
-                <div>
-                    <h4>Medical and Surgical</h4>
-                    <p>
-                        Our Medical and Surgical services offer advanced healthcare
-                        solutions to address medical needs.
-                    </p>
-                </div>
+        <h1> </h1>
+        <p>
+            Pertama kehamilan merupakan masa yang sangat penting bagi perkembangan janin karena di masa inilah organ-organ janin mulai terbentuk. Seiring dengan perkembangan janin, tubuh Bumil pun akan mengalami banyak perubahan selama kehamilan.
+        </p>
+        <div class="section__container tm__container">
+            <div class="tm__content">
+                <h6 class="section_tm__header">1. Morning Sickness</h6>
+                <p>
+                    Morning sickness adalah keluhan mual dan muntah yang dialami oleh banyak ibu hamil. Tanda kehamilan normal ini biasanya muncul pada usia kehamilan 4–12 minggu. Meski disebut morning sickness, keluhan ini juga bisa dirasakan pada siang atau malam hari.
+                </p>
+            </div>
+            <div class="tm__content">
+                <h6 class="section_tm__header">2. Pendarahanr</h6>
+                <p>
+                    Perdarahan dari vagina dalam jumlah sedikit merupakan salah satu tanda awal kehamilan normal. Perdarahan ini terjadi karena bakal janin (embrio) telah menempel pada dinding rahim. Munculnya tanda kehamilan ini dapat disertai dengan kram ringan dan terkadang menyerupai gejala menstruasi.
+                </p>
+            </div>
+            <div class="tm__content">
+                <h6 class="section_tm__header">3. Kram</h6>
+                <p>
+                    Kram merupakan tanda kehamilan normal yang biasanya dialami ibu hamil di awal kehamilan. Kram yang muncul selama hamil umumnya tidak jauh berbeda dengan yang dirasakan saat menstruasi.
+                </p>
+            </div>
+            <div class="tm__content">
+                <h6 class="section_tm__header">4. Keputihan</h6>
+                <p>
+                    Keputihan selama kehamilan yang tidak mengganggu dan tidak terasa nyeri atau gatal adalah salah satu tanda kehamilan normal. Keputihan ini merupakan cara alami tubuh ibu hamil untuk melindungi dan menjaga jalan lahir dari infeksi.
+                </p>
             </div>
         </div>
     </section>
-    <!-- end of choose us -->
-    <script src="../assets/js/script.js"></script>
-</body>
-</html>
+    <!-- end of Trimester 1 -->
+    
+    <!-- start of Trimester 2 -->
+    <section id="trimester2" class="section__container animate__animated animate__fadeIn" style="display: none;" >
+        <!-- <div class="tm__content"> -->
+            <h2 class="section_tm__header"> Trimester 2 (14-27 minggu)</h2>
+            <h1> </h1>
+            <div class="tm__image">
+                <img src="../assets/images/kram.jpg" alt="kram" />
+            </div>
+            <h1> </h1>
+            <p>
+                Kehamilan sudah memasuki trimester kedua. Mual dan muntah (morning sickness) 
+                umumnya perlahan sirna. Jangan lega dulu! Ibu hamil harus tetap harus waspada 
+                karena tiap trimester memiliki ketidaknyaman masing-masing. Apa saja keluhan ibu 
+                hamil trimester kedua yang mesti diketahui?
+            </p>
+            <div class="section__container tm__container">
+                <div class="tm__content">
+                    <h6 class="section_tm__header">1. Kram Kaki</h6>
+                    <p>
+                        Keluhan ini sering dialami pada malam hari. Meski tergolong umum terjadi, sebetulnya hingga kini penyebabnya belum diketahui. Namun, para ahli menduga bahwa kelelahan adalah pemicunya. Pasalnya, sirkulasi darah di kaki bisa terganggu akibat rahim yang menekan saraf tertentu. Selain itu, pastikan juga ibu hamil selalu mencukupi kebutuhan cairan, kalsium, dan magnesium. Bila ketiganya tidak tercukupi, risiko untuk mengalami kram semakin tinggi. Untuk mengatasi kram kaki saat hamil, Mama bisa melakukan gerakan peregangan yang mudah dan melakukannya dengan rutin.
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">2. Perut dan Payudara Membesar</h6>
+                    <p>
+                        Saat rahim membesar untuk menyesuaikan dengan ukuran janin yang terus bertambah, perut tentunya makin membuncit. Payudara pun secara bertahap ukurannya akan bertambah. Penggunaan bra khusus kehamilan dengan tali (strap) lebar sangat dianjurkan serta bra tanpa kawat.
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">3. Ambeien</h6>
+                    <p>
+                        Ambeien atau wasir juga kerap dialami pada trimester kedua. Kondisi tersebut disebabkan oleh pembuluh darah balik yang mengalami pelebaran, serta adanya peningkatan tekanan di daerah anus karena pertambahan ukuran rahim.“Untuk mengatasi keluhan ini, ibu hamil dapat duduk berendam selama 10 menit dengan air hangat. Jika ambeien makin mengganggu, lebih baik konsultasi dengan dokter agar bisa mendapatkan terapi yang optimal”.
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">4. Nyeri Punggung</h6>
+                    <p>
+                        Berat badan yang meningkat dapat menekan bagian punggung. Nah, saat bagian punggung tertekan, akan timbul nyeri dan ketidaknyamanan. Agar nyeri punggung tidak semakin parah, ibu hamil tidak disarankan untuk mengenakan sepatu hak tinggi. Ibu hamil juga bisa duduk di bangku dengan sandaran yang menopang punggung dengan baik. Usahakan juga untuk duduk tegak tapi tetap relaks. “Jangan lupa juga untuk mengatur posisi tidur saat hamil. Ibu hamil disarankan untuk tidur dengan posisi miring dan meletakkan bantal di antara dua kaki,”
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">5. Rambut di Tubuh Semakin Banyak</h6>
+                    <p>
+                        Bertambah banyaknya bulu-bulu di tubuh disebabkan oleh peningkatan hormon, yang akhirnya membuat lengan, wajah, dan punggung akan ditumbuhi rambut halus. Bila ini membuat ibu hamil tak nyaman atau tak percaya diri, kami menyarankan Anda untuk mencukurnya, bukan waxing.
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">6. Pusing</h6>
+                    <p>
+                        Ada banyak penyebab pusing saat hamil. Kehamilan menyebabkan perubahan sirkulasi, sehingga bisa menimbulkan keluhan pusing. Bila ini terjadi, minum banyak air putih, hindari berdiri dalam waktu lama, dan bergerak secara perlahan ketika Anda berdiri atau mengubah posisi. Ibu hamil juga bisa berbaring dengan posisi miring
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">7. Gusi Berdarah</h6>
+                    <p>
+                        Gusi berdarah merupakan salah satu keluhan yang sering dialami oleh ibu hamil, yang bisa merupakan tanda adanya gingivitis atau radang gusi. Hal ini disampaikan oleh drg. Wiena Manggala Putri dari KlikDokter. “Kondisi ini ditandai dengan perubahan warna gusi menjadi merah terang hingga kebiruan, pembengkakan pada gusi, hingga gusi mudah berdarah karena rangsangan kecil seperti menggosok gigi ataupun tanpa rangsangan,” jelas drg. Wiena. Pada ibu hamil, sebagian keluhan di rongga mulut disebabkan oleh perubahan hormon yang membuat gusi dan gigi lebih mudah terkena bakteri dari plak gigi. Selain itu, perubahan hormon juga menyebabkan peningkatan aliran darah, menyebabkan jaringan di sekitarnya menjadi lebih lunak dan gusi berdarah. Peradangan pada gusi akan meningkat saat menginjak trimester kedua. Bila Mama mengalami masalah gigi dan mulut saat hamil, jangan ragu untuk segera konsultasi ke dokter gigi, ya, Ma. Agar mencegah infeksi di area mulut yang mungkin akan berdampak pada pertumbuhan janin
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">8. Gastroesophageal Reflux Disease (GERD)</h6>
+                    <p>
+                        GERD adalah naiknya asam lambung ke kerongkongan, sehingga menimbulkan nyeri dan sensasi terbakar. Kondisi ini terjadi akibat peningkatan hormon progesteron. Untuk mencegah gejala GERD saat hamil, Mama dapat mengubah pola makan, yaitu makan lebih sering dengan porsi lebih sedikit. Hindari pula makanan pedas, asam, dan berminyak.
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">9. Preeklampsia</h6>
+                    <p>
+                        Preeklampsia memang biasanya terjadi pada trimester ketiga kehamilan. Namun, gangguan kesehatan ini juga bisa terjadi pada sebagian ibu hamil pada trimester kedua. Bila ibu hamil mengalami pembengkakan pada bagian tungkai, tangan, wajah, disertai dengan pandangan kabur, terdapat bayangan hitam pada mata, nyeri pada bagian kanan perut, serta mudah terjadi lebam, segera periksakan diri ke dokter.
+                    </p>
+                </div>
+                <div class="tm__content">
+                    <h6 class="section_tm__header">10. Keputihan</h6>
+                    <p>
+                        Bila muncul keputihan yang lengket, bening, atau berwarna putih, itu tergolong normal. Periksakan diri ke dokter jika keputihan tersebut mengalami perubahan. Misalnya, berbau tak sedap, menjadi kuning atau hijau, atau jika disertai nyeri dan gatal di area vagina. Pasalnya, itu bisa menandakan keputihan akibat infeksi jamur yang memang lebih sering terjadi pada trimester kedua.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end of section 2 -->
+        
+        <!-- start of Trimester 3 -->
+        <section id="trimester3" class="section__container animate__animated animate__fadeIn" style="display: none;" >
+            <!-- <div class="tm__content"> -->
+                <h2 class="section_tm__header"> Trimester 3 (28 - 40 minggu)</h2>
+                <h1> </h1>
+                <div class="tm__image">
+                    <img src="../assets/images/heartburn.jpg" alt="heartburn" />
+                </div>
+                <h1> </h1>
+                <p>
+                    Berikut adalah beberapa keluhan atau gejala  ibu hamil trimester 3 dan cara mengatasinya:
+                </p>
+                <div class="section__container tm__container">
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">1. Insomnia</h6>
+                        <p>
+                            Kesulitan tidur alias insomnia kerap dialami wanita selama kehamilan. Namun, pada sebagian wanita, gangguan tidur akan lebih parah terjadi di kehamilan trimester tiga. Hal tersebut utamanya disebabkan oleh perut yang sudah sangat membuncit, sehingga sulit untuk berganti posisi tidur. Alasan lainnya adalah pengaruh hormon estrogen dan janin yang aktif bergerak saat Mama beristirahat. Bumil yang mengalami insomnia dapat bermeditasi atau menyetel musik sebelum tidur untuk menenangkan pikiran. Mendapatkan pijatan ringan dengan essential oil, seperti chamomile, lavender, atau kayu cendana juga bisa bikin rileks.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">2. Kontraksi Braxton Hicks</h6>
+                        <p>
+                            Memasuki trimester akhir, ibu hamil umumnya akan lebih sering mengalami kontraksi. Kontraksi ini berupa rasa kencang di sekitar perut yang terjadi selama beberapa saat. Apabila kontraksi hanya terjadi sementara, tidak sampai ganggu aktivitas, dan tidak disertai keluarnya darah, itu adalah normal. Kontraksi yang seperti ini dinamakan Braxton hicks alias kontraksi palsu. Untuk mengatasinya, Mama hanya perlu beristirahat sejenak dan mengatur napas panjang. Bila perlu, ambil posisi berbaring dan miring ke kiri. Posisi ini akan membuat aliran darah ke rahim dan janin lebih lancar. Kontraksi pun lebih cepat berlalu.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">3. Kaki Bengkak</h6>
+                        <p>
+                            Besarnya ukuran rahim saat hamil tua bisa membentuk “bendungan” pembuluh darah di pangkal paha. Bendungan ini menyebabkan aliran darah balik dari kaki ke jantung sedikit terhambat. Alhasil, terjadilah kaki bengkak. Untuk mengatasi keluhan saat hamil tua yang satu ini, Mama bisa menyangga kaki saat duduk. Mama perlu memposisikan kaki lebih tinggi dari jantung ketika berbaring. Posisi ini akan membantu memperbaiki aliran darah balik ke jantung, sehingga bengkak dapat berkurang. Gunakan alas kaki yang terbuka dan tidak memiliki hak guna menghindari tekanan berlebih pada kaki. Meski umumnya terjadi secara normal, kaki bengkak saat hamil bisa menjadi tanda bahaya, yaitu jika terdapat protein pada urine. Bila hal itu terjadi, Mama wajib segera memeriksakan diri ke dokter atau klinik dengan fasilitas penunjang yang lengkap.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">4. Depresi</h6>
+                        <p>
+                            Depresi dapat terjadi sejak trimester pertama. Namun, sebagian besar bumil lebih berat mengalaminya di trimester ketiga, bahkan bisa berlanjut pasca melahirkan. Perasaan sedih, cemas, atau takut berlebihan menjelang waktu persalinan sangat dipengaruhi fluktuasi hormonal. Untuk mengurangi depresi, cobalah untuk mengelolanya dengan bermeditasi dan melakukan yoga prenatal. Mama juga bisa membaca buku motivasi yang membuat hati nyaman atau mendengar musik agar rileks. Jika diperlukan, Mama juga dapat berkonsultasi dengan psikolog untuk mengurai dan mengatasi depresi yang dirasakan.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">5. Kesulitan Bernafas</h6>
+                        <p>
+                            Gangguan pada pernapasan bisa menjadi masalah ibu hamil di trimester 3. Hal ini disebabkan oleh pembesaran rahim.  Saat rahim membesar, hanya ada sedikit ruang bagi paru-paru untuk mengembang, sehingga menyulitkan Mama untuk bernapas. Keluhan saat hamil tua tersebut bisa diatasi dengan meninggikan sedikit kepala dan bahu dengan lebih banyak bantal ketika berbaring atau istirahat.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">6. Kram Otot</h6>
+                        <p>
+                            Kram otot terjadi akibat aliran darah yang terhambat karena penekanan rahim. Selain itu, keluhan ini juga dilatari oleh stres otot akibat membawa beban berat (janin). Untuk membantu mengurangi kram otot saat hamil tua, bumil harus minum air putih setidaknya 8 gelas sehari. Ibu hamil juga perlu melakukan olahraga ringan secara rutin dan gerakan peregangan di area kaki. Hal ini penting agar otot-otot yang tegang bisa kembali rileks sehingga frekuensi kram berkurang.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">7. Nyeri Tulang Punggung</h6>
+                        <p>
+                            Janin yang terus membesar membuat berat badan Mama bertambah. Kondisi ini bisa membuat tulang belakang kewalahan dalam memberi topangan. Akibatnya, ibu hamil akan merasa pegal dan terkadang nyeri. Untuk membantu meredakannya, gunakan bantal hangat yang ditempelkan di area punggung yang terasa nyeri. Selain itu, usahakan memilih tempat duduk yang bisa menyangga tulang belakang dengan baik.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">8. Sering Buang Air Besar</h6>
+                        <p>
+                            Ini juga merupakan keluhan saat hamil tua yang kerap terjadi. Jika Mama sering buang air besar di trimester ketiga, Mama tak sendirian. Masalah sering buang air besar ini terjadi karena berbagai faktor. Misalnya, perubahan hormon dan perubahan pola makan.
+                        </p>
+                    </div>
+                    <div class="tm__content">
+                        <h6 class="section_tm__header">9. Rasa Terbakar di Dada (Heartburn)</h6>
+                        <p>
+                            Kondisi ini disebabkan oleh adanya aliran balik asam lambung ke kerongkongan. Selain karena lambung yang tertekan oleh rahim, heartburn juga bisa terjadi akibat pengaruh hormon kehamilan. Risiko terjadinya heartburn lebih tinggi bila Mama gemar mengonsumsi makanan yang digoreng, pedas, serta asam. Untuk mencegahnya, ibu hamil wajib menghindari makanan maupun minuman yang bisa menjadi pemicu keluhan ini. Mama juga perlu makan tepat waktu, dengan porsi lebih kecil tapi sering.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- end of section 2 -->
+            <!-- action button -->
+            <button class="material-icons floating_btn" onclick="moveToHome()">arrow_upward</button>
+            <!-- end of action button -->
+            <script src="../assets/js/usiakehamilan.js"></script>
+        </body>
+        </html>
