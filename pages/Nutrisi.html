@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <nav class="section_container nav_container">
             <div class="nav__logo">Health<span>Care</span></div>
             <ul class="nav__links">
@@ -44,7 +44,7 @@
                 <p>
                     Dimulai Dari Bulan 1 Sampai <br>Bulan 3 Kehamilan
                 </p>
-                <a href="#">Selengkapnya</a>
+                <a id="trims1" onclick="viewTrimester1()" href="#">Selengkapnya</a>
             </div>
             <div class="service__card animate__animated animate__bounceIn">
                 <span><i class="ri-mental-health-line"></i></span>
@@ -52,7 +52,7 @@
                 <p>
                     Dimulai Dari Bulan 4 Sampai <br>Bulan 6 Kehamilan
                 </p>
-                <a href="#">Selengkapnya</a>
+                <a id="trims2" onclick="viewTrimester2()" href="#">Selengkapnya</a>
             </div>
             <div class="service__card animate__animated animate__bounceIn">
                 <span><i class="ri-hospital-line"></i></span>
@@ -60,15 +60,154 @@
                 <p>
                     Dimulai Dari Bulan 7 Sampai <br>Bulan 9 Kehamilan
                 </p>
-                <a href="#">Selengkapnya</a>
+                <a id="trims3" onclick="viewTrimester3()" href="#">Selengkapnya</a>
             </div>
         </div>
     </section>
     <!-- end of service -->
 
 
-    
+    <!-- trimester 1 -->
+    <div id="trimester1" style="display: none;">
+        <section class="section__container why__container">
+            <div class="why__image">
+                <img src="../assets/images/sayur.jpeg" alt="sayur" />
+            </div>
+            <div class="why__content">
+                <h2 class="section__header">Trimester 1</h2>
+                <p>
+                    Trimester 1 ini dimulai dari awal kehamilan atau bulan pertama <br>sampai
+                    bulan ketiga dalam usia kehamilan. Dan dalam trimester 1 ini, <br> ibu hamil
+                    membutuhkan banyak nutrisi untuk tumbuh kembang si kecil.
+                </p>
 
+                <div class="why__grid">
+                    <span><i class="ri-hand-heart-line"></i></span>
+                    <div>
+                        <h4>Intensive Care</h4>
+                        <p>
+                            Our Intensive Care Unit is equipped with advanced technology and
+                            staffed by team of professionals
+                        </p>
+                    </div>
+                    <span><i class="ri-truck-line"></i></span>
+                    <div>
+                        <h4>Free Ambulance Car</h4>
+                        <p>
+                            A compassionate initiative to prioritize your health and
+                            well-being without any financial burden.
+                        </p>
+                    </div>
+                    <span><i class="ri-hospital-line"></i></span>
+                    <div>
+                        <h4>Medical and Surgical</h4>
+                        <p>
+                            Our Medical and Surgical services offer advanced healthcare
+                            solutions to address medical needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- action button -->
+        <button class="material-icons floating_btn" onclick="movetoServiceTrims1()">arrow_upward</button>
+        <!-- end of action button -->
+    </div>
+    <!-- end of trimester 1 -->
+
+    <!-- trimester 2 -->
+    <div id="trimester2" style="display: none;">
+        <section id="trimester2" class="section__container why__container">
+            <div class="why__image">
+                <img src="../assets/images/sayur.jpeg" alt="sayur" />
+            </div>
+            <div class="why__content">
+                <h2 class="section__header">Trimester 2</h2>
+                <p>
+                    Trimester 1 ini dimulai dari awal kehamilan atau bulan pertama <br>sampai
+                    bulan ketiga dalam usia kehamilan. Dan dalam trimester 1 ini, <br> ibu hamil
+                    membutuhkan banyak nutrisi untuk tumbuh kembang si kecil.
+                </p>
+
+                <div class="why__grid">
+                    <span><i class="ri-hand-heart-line"></i></span>
+                    <div>
+                        <h4>Intensive Care</h4>
+                        <p>
+                            Our Intensive Care Unit is equipped with advanced technology and
+                            staffed by team of professionals
+                        </p>
+                    </div>
+                    <span><i class="ri-truck-line"></i></span>
+                    <div>
+                        <h4>Free Ambulance Car</h4>
+                        <p>
+                            A compassionate initiative to prioritize your health and
+                            well-being without any financial burden.
+                        </p>
+                    </div>
+                    <span><i class="ri-hospital-line"></i></span>
+                    <div>
+                        <h4>Medical and Surgical</h4>
+                        <p>
+                            Our Medical and Surgical services offer advanced healthcare
+                            solutions to address medical needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="material-icons floating_btn" onclick="movetoServiceTrims2()">arrow_upward</button>
+    </div>
+    <!-- end of trimester2 -->
+
+    <!-- trimester 3 -->
+    <div id="trimester3" style="display: none;">
+        <section id="trimester3" class="section__container why__container">
+            <div class="why__image">
+                <img src="../assets/images/sayur.jpeg" alt="sayur" />
+            </div>
+            <div class="why__content">
+                <h2 class="section__header">Trimester 3</h2>
+                <p>
+                    Trimester 1 ini dimulai dari awal kehamilan atau bulan pertama <br>sampai
+                    bulan ketiga dalam usia kehamilan. Dan dalam trimester 1 ini, <br> ibu hamil
+                    membutuhkan banyak nutrisi untuk tumbuh kembang si kecil.
+                </p>
+
+                <div class="why__grid">
+                    <span><i class="ri-hand-heart-line"></i></span>
+                    <div>
+                        <h4>Intensive Care</h4>
+                        <p>
+                            Our Intensive Care Unit is equipped with advanced technology and
+                            staffed by team of professionals
+                        </p>
+                    </div>
+                    <span><i class="ri-truck-line"></i></span>
+                    <div>
+                        <h4>Free Ambulance Car</h4>
+                        <p>
+                            A compassionate initiative to prioritize your health and
+                            well-being without any financial burden.
+                        </p>
+                    </div>
+                    <span><i class="ri-hospital-line"></i></span>
+                    <div>
+                        <h4>Medical and Surgical</h4>
+                        <p>
+                            Our Medical and Surgical services offer advanced healthcare
+                            solutions to address medical needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="material-icons floating_btn" onclick="movetoServiceTrims3()">arrow_upward</button>
+    </div>
+    <!-- end of trimester 3 -->
+
+    <script src="../assets/js/script_nutrisi.js"></script>
 
 </body>
 
