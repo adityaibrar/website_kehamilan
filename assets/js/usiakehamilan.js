@@ -36,6 +36,7 @@ function explore(){
 function trimester1UsiaKehamilan() {
     if (trimester1.style.display === 'none' || trimester1.style.display === '') {
         trimester1.style.display = '';
+        btnUp.style.display = '';
         trimester2.style.display = 'none';
         trimester3.style.display = 'none';
         serviceGrid.style.display = 'none';
