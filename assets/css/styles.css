@@ -26,6 +26,8 @@ html{
   padding: 5rem 1rem;
 }
 
+
+
 .section__header {
   margin-bottom: 0.5rem;
   font-size: 2rem;
@@ -81,6 +83,8 @@ header {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--white);
+  cursor: pointer;
+  
 }
 
 .nav__logo span {
@@ -103,6 +107,22 @@ header {
 .link a:hover {
   color: var(--white);
 }
+
+.btn_left {
+  width: 40px;
+  height: 40px;
+  background: #12ac8e;
+  color: white;
+  border-radius: 25%;
+  font-size: 20px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+  border: none;
+  cursor: pointer;
+}
+.btn_left:active {
+  background: #0c836b;
+}
+
 
 /* floating button */
 

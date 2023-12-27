@@ -10,13 +10,33 @@ function moveToHome() {
     backNavigator.scrollIntoView();
 }
 
+function back() {
+    if(trimester1.style.display === '') {
+        trimester1.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    } else if(trimester2.style.display === '') {
+        trimester2.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    } else if(trimester3.style.display === '') {
+        trimester3.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    }
+}
+
 function explore(){
     window.location.href = "../index.html";
 }
 
-function trimester1UsiaKehamilan() {
+function trimester1Diagnosa() {
     if (trimester1.style.display === 'none' || trimester1.style.display === '') {
-        trimester1.style.display = 'none';
+        trimester1.style.display = '';
+        btnUp.style.display = '';
         trimester2.style.display = 'none';
         trimester3.style.display = 'none';
         serviceGrid.style.display = 'none';
@@ -24,14 +44,14 @@ function trimester1UsiaKehamilan() {
     } else {
         trimester1.style.display = 'none';
         serviceGrid.style.display = 'block';
-        backNavigator.style.display = 'none'; 
-        title.style.display = 'block'; 
+        backNavigator.style.display = 'none';
+        title.style.display = 'block';
     }
 }
 
-function trimester2UsiaKehamilan() {
+function trimester2Diagnosa() {
     if (trimester2.style.display === 'none' || trimester2.style.display === '') {
-        trimester2.style.display = 'none';
+        trimester2.style.display = '';
         trimester1.style.display = 'none';
         serviceGrid.style.display = 'none';
         title.style.display = 'none';
@@ -47,7 +67,7 @@ function trimester2UsiaKehamilan() {
 
 function trimester3Diagnosa() {
     if (trimester3.style.display === 'none' || trimester3.style.display === '') {
-        trimester3.style.display = 'block';
+        trimester3.style.display = '';
         // trimester2.style.display = 'none';
         // trimester1.style.display = 'none';
         serviceGrid.style.display = 'none';

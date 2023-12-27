@@ -1,60 +1,99 @@
-function viewTrimester1() {
-    var trims1 = document.getElementById('trimester1');
-    var trims_btn1 = document.getElementById('trims2');
-    var trims_btn2 = document.getElementById('trims3');
-    if (trims1.style.display === 'none') {
-        trims1.style.display = '';
-        trims1.scrollIntoView();
-    } else {
-        trims1.style.display = 'none';
-    }
+var title = document.querySelector('.service__container')
+var backNavigator = document.querySelector('.header');
+var trimester1 = document.getElementById('trimester1');
+var trimester2 = document.getElementById('trimester2');
+var trimester3 = document.getElementById('trimester3');
+var btnUp = document.getElementById('btn-up');
+var serviceGrid = document.querySelector('.service__grid');
+
+function moveToHome() {
+    backNavigator.scrollIntoView();
 }
-function viewTrimester2() {
-    var trims2 = document.getElementById('trimester2');
-    if (trims2.style.display === 'none') {
-        trims2.style.display = '';
-        trims2.scrollIntoView();
-    } else {
-        trims2.style.display = 'none';
-    }
-}
-function viewTrimester3() {
-    var trims3 = document.getElementById('trimester3');
-    if (trims3.style.display === 'none') {
-        trims3.style.display = '';
-        trims3.scrollIntoView();
-    } else {
-        trims3.style.display = 'none';
+
+function back() {
+    if(trimester1.style.display === '') {
+        trimester1.style.display = 'none';
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    } else if(trimester2.style.display === '') {
+        trimester2.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    } else if(trimester3.style.display === '') {
+        trimester3.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
     }
 }
 
-function movetoServiceTrims1() {
-    var service = document.getElementById('header');
-    var trimester1 = document.getElementById('trimester1');
-    service.scrollIntoView();
-    setTimeout(
-        function() {
-            trimester1.style.display = 'none'
-        }, 500
-    )
+function explore() {
+    window.location.href = "../index.html";
 }
-function movetoServiceTrims2() {
-    var service = document.getElementById('header');
-    var trimester1 = document.getElementById('trimester2');
-    service.scrollIntoView();
-    setTimeout(
-        function() {
-            trimester1.style.display = 'none'
-        }, 500
-    )
+
+function trimester1NutrisiKehamilan() {
+    if (trimester1.style.display === 'none' || trimester1.style.display === '') {
+        trimester1.style.display = '';
+        trimester2.style.display = 'none';
+        trimester3.style.display = 'none';
+        serviceGrid.style.display = 'none';
+        title.style.display = 'none';
+    } else {
+        trimester1.style.display = 'none';
+        serviceGrid.style.display = 'block';
+        backNavigator.style.display = 'none';
+        title.style.display = 'block';
+    }
 }
-function movetoServiceTrims3() {
-    var service = document.getElementById('header');
-    var trimester1 = document.getElementById('trimester3');
-    service.scrollIntoView();
-    setTimeout(
-        function() {
-            trimester1.style.display = 'none'
-        }, 500
-    )
+
+function trimester2NutrisiKehamilan() {
+    if (trimester2.style.display === 'none' || trimester2.style.display === '') {
+        trimester2.style.display = '';
+        trimester1.style.display = 'none';
+        serviceGrid.style.display = 'none';
+        title.style.display = 'none';
+        btnUp.style.display = '';
+    } else {
+        trimester1.style.display = 'none';
+        trimester2.style.display = 'none';
+        serviceGrid.style.display = 'block';
+        backNavigator.style.display = 'none';
+        title.style.display = 'block';
+    }
+}
+
+function trimester3NutrisiKehamilan() {
+    if (trimester3.style.display === 'none' || trimester3.style.display === '') {
+        trimester3.style.display = '';
+        trimester2.style.display = 'none';
+        trimester1.style.display = 'none';
+        serviceGrid.style.display = 'none';
+        title.style.display = 'none';
+        btnUp.style.display = '';
+    } else {
+        trimester1.style.display = 'none';
+        trimester2.style.display = 'none';
+        serviceGrid.style.display = 'block';
+        backNavigator.style.display = 'none';
+        title.style.display = 'block';
+    }
+}
+
+function backNav() {
+    if (backNavigator.style.display === 'block' || backNavigator.style.display === '') {
+        trimester1.style.display = 'none';
+        trimester2.style.display = 'none';
+        trimester3.style.display = 'none';
+        serviceGrid.style.display = 'grid';
+        backNavigator.style.display = 'none';
+        title.style.display = 'block';
+    } else {
+        trimester1.style.display = 'none';
+        trimester2.style.display = 'none';
+        trimester3.style.display = 'none';
+        serviceGrid.style.display = 'none';
+        title.style.display = 'none';
+    }
 }

@@ -10,6 +10,25 @@ function moveToHome() {
     backNavigator.scrollIntoView();
 }
 
+function back() {
+    if(trimester1.style.display === '') {
+        trimester1.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    } else if(trimester2.style.display === '') {
+        trimester2.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    } else if(trimester3.style.display === '') {
+        trimester3.style.display = 'none'
+        btnUp.style.display = 'none';
+        title.style.display = '';
+        serviceGrid.style.display = '';
+    }
+}
+
 function explore(){
     window.location.href = "../index.html";
 }
