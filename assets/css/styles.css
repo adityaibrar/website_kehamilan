@@ -389,9 +389,8 @@ header {
 }
 
 .doctors__grid {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10rem;
+  display: contents;
   gap: 2rem;
 }
 
