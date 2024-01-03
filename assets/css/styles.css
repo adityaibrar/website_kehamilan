@@ -401,7 +401,7 @@ header {
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
-  width: 600px;
+  width: 100%;
 }
 
 .doctors__card__image {
