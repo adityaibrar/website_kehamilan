@@ -389,9 +389,10 @@ header {
 }
 
 .doctors__grid {
-  margin-top: 10rem;
-  display: contents;
+  margin-top: 60px;
+  display: grid;
   gap: 2rem;
+  justify-content: center;
 }
 
 .doctors__card {
@@ -400,6 +401,7 @@ header {
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
+  width: 600px;
 }
 
 .doctors__card__image {
