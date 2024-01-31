@@ -18,7 +18,6 @@ html{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: auto;
 }
 
 .section__container {
@@ -59,6 +58,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 header {
